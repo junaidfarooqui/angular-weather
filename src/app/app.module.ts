@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SettingComponent } from './setting/setting.component';
+import { WeatherService } from './weather.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { SettingComponent } from './setting/setting.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
